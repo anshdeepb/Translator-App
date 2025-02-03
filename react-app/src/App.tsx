@@ -15,7 +15,7 @@ function App() {
   const [isTyping, setIsTyping] = useState(true);
 
   // Array of colors for the phrases
-  const colors = ["#FF6347", "#4682B4", "#32CD32", "#FFD700", "#8A2BE2", "#f2c77c", "#9ffcfb", "#cb9ffc"];
+  const colors = ["#FF6347", "#fcba03", "#025403", "#FFD700", "#8A2BE2", "#f2c77c", "#9ffcfb", "#cb9ffc"];
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setInputValue(event.target.value);
@@ -37,7 +37,7 @@ function App() {
 
     // Sending the request to your Flask backend
     try {
-      const response = await fetch("https://translatorapppython-e7b2dybwdrfbgdeq.canadacentral-01.azurewebsites.net", {
+      const response = await fetch("http://127.0.0.1:5000/translate", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

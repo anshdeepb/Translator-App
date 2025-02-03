@@ -3,16 +3,24 @@
 html, body {
   height: 100%;
   margin: 0;
-  background-color: #181919;
+  background-color: #b5b8b8;
 }
 
 body {
   overflow: hidden; /* Prevents scrolling */
+  background-image: url('public/pastel-vintage-2160-x-1215-background-lvnco77zcoc7x8jh.jpg'); /* Path from the root of public folder */
+  background-size: cover; /* Make sure the image covers the entire screen */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat;
 }
 
 #root {
   height: 100%;
   width: 100%;
+}
+
+h1 {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 /* Container for the input and button */
@@ -26,6 +34,9 @@ body {
   justify-content: center;
   align-items: center;
   background-color: #2f3131;
+  opacity: 0.5;
+  border: 2px solid black;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .response-box{
