@@ -37,7 +37,7 @@ function App() {
 
     // Sending the request to your Flask backend
     try {
-      const response = await fetch("https://translatorapp-c4hfb8e0b2ggcke7.canadacentral-01.azurewebsites.net", {
+      const response = await fetch("https://translatorapppython-e7b2dybwdrfbgdeq.canadacentral-01.azurewebsites.net", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
