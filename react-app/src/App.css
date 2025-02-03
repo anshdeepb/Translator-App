@@ -1,0 +1,101 @@
+@import "tailwindcss";
+
+html, body {
+  height: 100%;
+  margin: 0;
+  background-color: #181919;
+}
+
+body {
+  overflow: hidden; /* Prevents scrolling */
+}
+
+#root {
+  height: 100%;
+  width: 100%;
+}
+
+/* Container for the input and button */
+.container {
+  max-width: 50%;
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #2f3131;
+}
+
+.response-box{
+  padding: 1.5%;
+  margin-bottom: 1rem;
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 50%;
+  border-radius: 16px;
+  background-color: #2f3131;
+}
+
+
+
+
+/* Styling for headings */
+h1 { /* White text for the heading */
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+input {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  background-color: #2f3131; /* Dark background for the input */
+  color: white; /* White text in the input */
+}
+
+button {
+  width: 50px;
+  padding: 1rem;
+  font-size: 1rem;
+  background-color: white; /* Dark blue background for the button */
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border: none;
+  align-self: flex-end;
+}
+
+button:hover {
+  background-color: #959aa0; /* Darker blue on hover */
+}
+
+/* Styling for the select button (before opening the dropdown) */
+select {
+  background-color: #2f3131; 
+  color: white; 
+  padding: 10px; 
+  font-size: 1rem; 
+  border-radius: 8px; 
+  appearance: none; 
+  cursor: pointer; 
+  text-align: center; 
+  width: 100%;
+  outline: none; 
+}
+
+
+select::after {
+  content: ' ▼'; 
+}
+
+select:focus {
+  background-color: #444; 
+  border-color: #888; 
+}
+
